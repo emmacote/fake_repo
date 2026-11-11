@@ -8,4 +8,9 @@ jobs:
     steps:
       - name: Check out repo code
         uses: actions/checkout@v4
+      
+      - name: list files in the repository
+        run: |
+          echo "here are the files currently in the workspace:"
+          ls -la
         
